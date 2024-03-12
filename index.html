@@ -1,27 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      name="description"
-      content="Uma plataforma de desenvolvimento de aplicações distribuídas"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="Uma plataforma de desenvolvimento de aplicações distribuídas" />
 
-    <title>Distribuilder</title>
-  </head>
-  <body>
-    <noscript>Distribuilder - Uma plataforma de desenvolvimento de aplicações distribuídas</noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans&display=swap" rel="stylesheet" />
+
+  <!-- Load Blockly core -->
+  <script src="./my-lib-directory/blockly/blockly_compressed.js"></script>
+  <!-- Load the default blocks -->
+  <script src="./my-lib-directory/blockly/blocks_compressed.js"></script>
+  <!-- Load a generator -->
+  <script src="./my-lib-directory/blockly/javascript_compressed.js"></script>
+  <!-- Load a message file -->
+  <script src="./my-lib-directory/blockly/msg/en.js"></script>
+
+  <title>Distribuilder</title>
+</head>
+
+<body>
+  <noscript>Distribuilder - Uma plataforma de desenvolvimento de aplicações distribuídas</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
