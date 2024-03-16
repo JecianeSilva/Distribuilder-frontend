@@ -14,43 +14,26 @@ export const Content = styled.div`
   overflow-y: auto;
   width: 100%;
   height: 100%;
-  background-color: ${theme.colors.white};
   color: ${theme.colors.primary};
 
-  .blocklySvg {
-    background-color: ${theme.colors.primary.lightness};
+  #blocklyDiv{
+    margin-top: 48px;
+    width: 100%;
+    height: calc(100vh - 48px);
+    overflow-y: auto;
   }
 
-  .blocklyToolboxDiv {
+  .blocklyToolboxDiv, .blocklyFlyout {
     position: fixed;
     top: 86px;
-    background-color: ${theme.colors.primary.lightness};
-    width: 220px;
+    background-color: ${theme.colors.primary.main};
     height: 100%;
     left: 0;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     padding: 0;
-  }
-
-  .blocklyToolboxCategory {
-    display: flex;
-    align-items: center;
-    flex-flow: row;
-    border: 0;
-    padding: 0;
-
-    background-color: ${theme.colors.primary.lightness};
-    color: #000;
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    height: 41px;
-    width: 100%;
-
-    z-index: 1;
-    >.blocklyTreeRow{
-      border: 0 !important;
+    
+    .blocklyFlyoutBackground{
+      fill: none;
     }
   }
 `;
@@ -74,7 +57,7 @@ export const InstructionListContainer = styled.div`
   position: fixed;
   top: 48px;
   background-color: ${theme.colors.primary.light};
-  width: 220px;
+  width: 165px;
   height: 100%;
   left: 0;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
